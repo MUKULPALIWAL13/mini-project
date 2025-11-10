@@ -129,10 +129,20 @@ ALUout
 ## 5. Pipelined Processor Verification
 
 ### 5.1 Assembly Test Program  
-**Paste Pipeline Test Assembly Program Here:**  
-*(Sequence showing hazards, branch instructions, load-use tests)*  
-<br><br><br><br><br>
-
+```0x00: addi x8,  x0, 10          # load 10 into x8
+0x04: addi x3,  x3, -1          # decrement x3
+0x08: sw   x1,  0(x2)           # store word
+0x0C: add  x8,  x0, x0          # clear x8
+0x10: addi x5,  x0, 0           # clear x5
+0x14: addi x6,  x14, 0          # copy x14 → x6
+0x18: beq  x12, x0, next        # branch if x12 == 0
+0x1C: addi x5,  x5, 18          # increment x5 by 18
+0x20: beq  x20, x0, loop        # loop back (-4 offset)
+0x24: addi x6,  x7, 0xA3        # add 163 to x7 → x6
+0x28: lw   x8,  0(x2)           # load x8 from mem[x2]
+0x2C: addi x2,  x2, 0x41        # x2 += 65
+0x30: nop                       # end / padding
+``` 
 ### 5.2 GTKWAVE Output (Pipeline Execution)  
 **Paste Pipeline Waveform Here:**  
 *(Include forwarding, stall cycles, control flush behavior)*  
