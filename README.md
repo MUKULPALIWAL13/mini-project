@@ -31,7 +31,7 @@ Pipeline stages: IF, ID, EX, MEM, WB. Includes forwarding logic, hazard detectio
 
 **Place Pipelined Datapath RTL Diagram Here:**  
 *(Paste Pipeline Datapath / RTL Block Diagram)*  
-<br><br><br><br><br>
+<br>
 
 ---
 
