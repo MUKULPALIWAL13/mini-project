@@ -20,12 +20,12 @@ A custom Python-based assembler supporting RV32F-like instructions was developed
 ### 2.1 Single-Cycle Architecture  
 A complete datapath including ALU, register files, immediate generator, control logic, floating-point datapath, and memory interface.
 
-![](singlecycle_core\docs\architecture.jpeg
-)
+![](singlecycle_core/docs/single.png)
 Architecture for Single cycle  
 
-![](singlecycle_core\docs\FP_RTL.png)
-RTL of Floating Point unit 
+
+![](singlecycle_core/docs/FP_RTL.png)
+RTL of Floating Point unit
 ### 2.2 Five-Stage Pipelined Architecture  
 Pipeline stages: IF, ID, EX, MEM, WB. Includes forwarding logic, hazard detection, flushing mechanisms, and pipeline registers.
 
@@ -120,10 +120,10 @@ END:
 ```  
 
 ### 4.3 GTKWAVE Output (Single Cycle)  
-![](singlecycle_core\simulations\single_Cyclefirstten.png
-)control siganls
+![](singlecycle_core/simulations/single_Cyclefirstten.png)
+control signals
 <br>
-![ALUout](singlecycle_core\simulations\ALUout.png)
+![](singlecycle_core/simulations/ALUout.png)
 ALUout
 <br>
 ## 5. Pipelined Processor Verification
