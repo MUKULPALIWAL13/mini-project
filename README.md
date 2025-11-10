@@ -146,7 +146,7 @@ ALUout
 <br><br><br><br><br>
 
 ### 5.3 FPGA Board Output Verification  
-![board](pipeline_core/docs/board .jpg) 
+![board](pipeline_core/docs/board.jpg) 
 
 ---
 
